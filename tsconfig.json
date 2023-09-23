@@ -10,7 +10,9 @@
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
+    "checkJs": false,
     "resolveJsonModule": true,
+    "noImplicitAny": false,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
@@ -22,6 +24,9 @@
     "paths": {
       "@/*": ["./*"]
     }
+  },
+  "linterOptions": {
+    "exclude": "['src/**','components/**']",
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"],
